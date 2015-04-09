@@ -1,0 +1,46 @@
+{
+    "name": "Common Window",
+    "type": "webcomp",
+    "code": "var win = new CommonWindow({title:'窗口'});win.show();",
+    "desc": "公共窗口,窗口公共窗口,窗口适用于某些使用jquery编写没有引入extjs类库的页面。该控件提供了现有的4种主题风格，随用户主题改变而改变适用于某些使用jquery编写没有引入extjs类库的页面。该控件提供了现有的4种主题风格，随用户主题改变而改变",
+    "configs": [{
+        "name": "id",
+        "type": "String",
+        "required": false,
+        "desc": "The path to the directory which contains all application's classes. This path will be registered via Ext.Loader.setPath for the namespace specified in the name config."
+    }, {
+        "name": "title",
+        "type": "String",
+        "required": false,
+        "desc": "aaaaaaaaaaaaaaa"
+    }],
+    "properties": [{
+        "name": "createTime",
+        "type": "String",
+        "desc": "createtime"
+    }],
+    "methods": [{
+        "name": "show(duringTime,confs)",
+        "desc": "The path to the directory which contains all application's classes. This path will be registered via Ext.Loader.setPath for the namespace specified in the name config.",
+        "args": [{
+            "name": "duringTime",
+            "type": "Number",
+            "required": true,
+            "desc": "aaaaaaaaaaaaaaa"
+        }, {
+            "name": "confs",
+            "type": "Object",
+            "required": false,
+            "desc": "confsssssssss"
+        }]
+    }, {
+        "name": "close(isDestroy)",
+        "desc": "关闭窗口",
+        "args": [{
+            "name": "isDestroy",
+            "type": "Boolean",
+            "required": false,
+            "desc": "是否销毁对象及相关dom"
+        }]
+    }]
+}

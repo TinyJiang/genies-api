@@ -1,0 +1,82 @@
+{
+    "name": "Minder",
+    "type": "kityminder-core",
+    "code": "var km = window.km = new kityminder.Minder();km.renderTo('div');km.importJson(sc);",
+    "desc": "kityminder-core 脑图主类",
+    "configs": [],
+    "properties": [],
+    "methods": [{
+        "name": "renderTo(target)",
+        "desc": "将脑图渲染至容器，请在配置脑图数据之前先进行渲染",
+        "args": [{
+            "name": "target",
+            "type": "String or Dom",
+            "required": true,
+            "desc": "脑图容器，可以是<a target='selectors' href='https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector'>选择器</a>，也可以是dom对象"
+        }]
+    }, {
+        "name": "importJson(json)",
+        "desc": "导入json数据",
+        "args": [{
+            "name": "json",
+            "type": "JSON Object",
+            "required": true,
+            "desc": "需要导入的json数据"
+        }]
+    }, {
+        "name": "execCommand(name)",
+        "desc": "执行命令,详情见<a target='commands' href='https://github.com/fex-team/kityminder-core/wiki/command'>Commonds</a>",
+        "args": [{
+            "name": "name",
+            "type": "String",
+            "required": true,
+            "desc": "需要执行的命令名称"
+        }]
+    }, {
+        "name": "setTheme(theme)",
+        "desc": "设置脑图主题,需要执行refresh()刷新之后才会生效，<a href='./Options#config.Themes'>主题列表</a>",
+        "args": [{
+            "name": "theme",
+            "type": "String",
+            "required": true,
+            "desc": "主题名称"
+        }]
+    }, {
+        "name": "setTemplate(template)",
+        "desc": "设置脑图显示模版,需要执行refresh()刷新之后才会生效,<a href='./Options#config.Templates'>模版列表</a>",
+        "args": [{
+            "name": "template",
+            "type": "String",
+            "required": true,
+            "desc": "模版名称"
+        }]
+    }, {
+        "name": "useTheme(theme,duration)",
+        "desc": "使用脑图主题,自动执行refresh(),<a href='./Options#config.Themes'>主题列表</a>",
+        "args": [{
+            "name": "theme",
+            "type": "String",
+            "required": true,
+            "desc": "主题名称"
+        }, {
+            "name": "duration",
+            "type": "Number",
+            "required": false,
+            "desc": "目前未实现"
+        }]
+    }, {
+        "name": "useTemplate(template,duration)",
+        "desc": "使用脑图模版,自动执行refresh(),<a href='./Options#config.Templates'>模版列表</a>",
+        "args": [{
+            "name": "template",
+            "type": "String",
+            "required": true,
+            "desc": "模版名称"
+        }, {
+            "name": "duration",
+            "type": "Number",
+            "required": false,
+            "desc": "目前未实现"
+        }]
+    }]
+}

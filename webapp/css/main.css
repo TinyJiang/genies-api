@@ -1,0 +1,64 @@
+.detail-cnt{
+	padding-right:200px;
+}
+
+.nav-list{
+	list-style: none;
+	position: fixed;
+	right:10px;
+	top:80px;
+	width:230px;
+}
+.nav-list-lv1{
+	font-weight: bold;
+}
+
+.nav-list-lv2{
+	padding-left:10px;
+}
+.nav-list-lv3{
+	padding-left:10px;
+	color: #ccc;
+}
+
+.api-cnt {
+}
+.desc {
+	margin-top: 20px;
+}
+.content-text {
+	padding: 5px 10px;
+	text-indent: 20px;
+	font-size: 15px;
+}
+.sample-code {
+	font-family: "lucida console";
+	padding: 5px;
+}
+.type-cnt {
+	margin: 10px;
+}
+.single-type {
+	border-top: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px;
+}
+.single-param {
+	border-top: 1px dashed #ccc;
+	padding: 10px;
+	margin: 10px;
+}
+.name {
+	margin: 0px 10px;
+}
+.label {
+	font-weight: normal;
+}
+.type-info {}
+.cus-btn{
+	cursor: pointer;
+}
+
+.cus-btn:hover{
+	text-decoration: underline;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="/js/lib/bs/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/css/common.css" />
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+
+	<body>
+		<div class="container-fluid detail-cnt">
+			<%- include('head'); %>
+			<ul class="nav-list">
+				<li class="nav-list-lv1"><span class="cus-btn" onclick="window.location.href='#title'"><%=api.name%></span></li>
+				<li class="nav-list-lv2"><span class="cus-btn" onclick="window.location.href='#configs'">Configs</span></li>
+				<%for(var i=0; i<api.configs.length; i++) {%>
+					<li class="nav-list-lv3"><span class="cus-btn" onclick="window.location.href='#config.<%=api.configs[i].name%>'"><%=api.configs[i].name%></span></li>
+				<%}%>
+				<li class="nav-list-lv2"><span class="cus-btn" onclick="window.location.href='#properties'">Properties</span></li>
+				<%for(var i=0; i<api.properties.length; i++) {%>
+					<li class="nav-list-lv3"><span class="cus-btn" onclick="window.location.href='#property.<%=api.properties[i].name%>'"><%=api.properties[i].name%></span></li>
+				<%}%>
+
+				<li class="nav-list-lv2"><span class="cus-btn" onclick="window.location.href='#methods'">Methods</span></li>
+				<%for(var i=0; i<api.methods.length; i++) {%>
+					<li class="nav-list-lv3"><span class="cus-btn" onclick="window.location.href='#method.<%=api.methods[i].name%>'"><%=api.methods[i].name%></span></li>
+				<%}%>
+				
+			</ul>
+			<div class="api-cnt">
+				<div class="title" id="title">
+					<h1><%=api.name%></h1>
+					<p class="desc content-text"><%- api.desc%></p>
+					<code class="sample-code">
+						<%=api.code%>
+					</code>
+					<div id="sample-img-cnt"></div>
+				</div>
+				<div class="configs" id="configs">
+					<h3>Configs</h3>
+					<div id="configs-cnt" class="type-cnt">
+						<%for(var i=0; i<api.configs.length; i++) {%>
+							<div class="single-type"  id="config.<%=api.configs[i].name%>">
+								<div class="type-info">
+									<label class="name"><%=api.configs[i].name%></label>
+									<span class="label label-info"><%=api.configs[i].type%></span>
+									<%if(api.configs[i].required){%>
+										<span class="label label-success">必填</span>
+									<%}else{%>
+										<span class="label label-default">可选</span>
+									<%}%>
+								</div>
+							<p class="content-text"></p>
+								<%- api.configs[i].desc%>
+							</div>
+						<%}%>
+					</div>
+				</div>
+				<div class="properties"  id="properties">
+					<h3>Properties</h3>
+					<div id="configs-cnt" class="type-cnt">
+						<%for(var i=0; i<api.properties.length; i++) {%>
+							<div class="single-type" id="property.<%=api.properties[i].name%>">
+								<div class="type-info">
+									<label class="name"><%=api.properties[i].name%></label>
+									<span class="label label-info"><%=api.properties[i].type%></span>
+								</div>
+								<p class="content-text"><%- api.properties[i].desc%></p>
+							</div>
+						<%}%>
+					</div>
+				</div>
+				<div class="methods" id="methods">
+					<h3 >Methods</h3>
+					<div id="configs-cnt" class="type-cnt">
+						<%for(var i=0; i<api.methods.length; i++) {%>
+						<div class="single-type"  id="method.<%=api.methods[i].name%>">
+							<div class="type-info">
+								<label class="name"><%=api.methods[i].name%></label>
+							</div>
+							<p class="content-text"><%- api.methods[i].desc%></p>
+							<div>
+								<%for(var j=0; j<api.methods[i].args.length; j++) {%>
+								<div class="single-param">
+									<div class="type-info">
+										<label class="name"><%=api.methods[i].args[j].name%></label>
+										<span class="label label-info"><%=api.methods[i].args[j].type%></span>
+										<%if(api.methods[i].args[j].required){%>
+											<span class="label label-success">必填</span>
+										<%}else{%>
+											<span class="label label-default">可选</span>
+										<%}%>
+									</div>
+									<p class="content-text"><%- api.methods[i].args[j].desc%></p>
+								</div>
+								<%}%>
+							</div>
+						</div>
+						<%}%>
+					</div>
+				</div>
+			</div>
+			<%- include('foot'); %>
+		</div>
+		<script type="text/javascript" src="/js/lib/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="/js/lib/bs/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

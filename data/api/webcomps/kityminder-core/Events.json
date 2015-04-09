@@ -1,0 +1,141 @@
+{
+    "name": "事件列表",
+    "type": "kityminder-core",
+    "code": "",
+    "desc": "脑图中事件配置列表,所有事件回调参数均为MinderEvent事件对象e",
+    "configs": [],
+    "properties": [],
+    "methods": [{
+        "name": "contentchange(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "beforeExecCommand(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "preExecCommand(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "execCommand(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "preimport(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "import(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "beforeexport(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "interactchange(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "focus(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "blur(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "layoutallfinish(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "layout(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "layoutapply(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "layoutfinish(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "ready(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "nodecreate(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "noderemove(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "nodeattach(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "nodedetach(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "paperrender(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "beforerender(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "noderender(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "selectionchange(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "selectionclear(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "statuschange(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "themechange(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "savescene(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "editnoterequest(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "shownoterequest(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "hidenoterequest(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "viewchange(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "viewchanged(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }, {
+        "name": "zoom(e)",
+        "desc": "expand 等内容更新事件",
+        "args": []
+    }]
+}

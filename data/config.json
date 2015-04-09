@@ -1,0 +1,14 @@
+{
+    "name": "Eastcom API",
+    "api": [{
+        "name": "Java API",
+        "url": "http://10.8.132.114/ncsp_code_review_list",
+        "path": ""
+    }, {
+        "name": "Web Components",
+        "path": "api/webcomps"
+    }, {
+        "name": "Wiki",
+        "path": "api/wiki"
+    }]
+}

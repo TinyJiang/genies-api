@@ -1,0 +1,13 @@
+{
+    "name": "genies-api",
+    "version": "0.1.0",
+    "description": "Simple api",
+    "homepage": "http://www.tinyjiang.com/",
+    "author": "Tiny Jiang",
+    "dependencies": {
+        "express": "4.2.0",
+        "jade": "1.9.2",
+        "ejs": "2.2.4",
+        "marked": "0.3.3"
+    }
+}

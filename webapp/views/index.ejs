@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="../js/lib/bs/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<%- include('head'); %>
+			<div class="row">
+				<ul class="nav">
+				<%
+					function renderLine(api,level){%>
+						<li class="level-<%=level%>"><a href="<%=api.getShowPath()%>"><%= api.fileName %></a></li>
+				<%
+						if(api.hasChildren()){
+							for(var i = 0;i<api.children.length;i++){
+								renderLine(api.children[i],level+1);
+							}
+						}
+					}
+				%>
+
+				<% for(var i=0; i<api.length; i++) {
+				   renderLine(api[i],0);
+				 } %>
+				</ul>
+			</div>
+			<%- include('foot'); %>
+		</div>
+		<script type="text/javascript" src="../js/lib/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/lib/bs/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

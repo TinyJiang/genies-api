@@ -1,0 +1,19 @@
+{
+    "name": "配置列表",
+    "type": "kityminder-core",
+    "code": "",
+    "desc": "脑图中所需的各种配置列表",
+    "configs": [{
+        "name": "Themes",
+        "type": "String",
+        "required": true,
+        "desc": "<ul style='list-style:none'><li>classic: 脑图经典</li><li>classic-compact: 紧凑经典</li><li>snow: 温柔冷光</li><li>snow-compact: 紧凑冷光</li><li>fish: 鱼骨图</li><li>wire: 线框</li><li>fresh-red: 清新红</li><li>fresh-soil: 泥土黄</li><li>fresh-green: 文艺绿</li><li>fresh-blue: 天空蓝</li><li>fresh-purple: 浪漫紫</li><li>fresh-pink: 脑残粉</li><li>fresh-red-compat: 紧凑红</li><li>fresh-soil-compat: 紧凑黄</li><li>fresh-green-compat: 紧凑绿</li><li>fresh-blue-compat: 紧凑蓝</li><li>fresh-purple-compat: 紧凑紫</li><li>fresh-pink-compat: 紧凑粉</li></ul>"
+    }, {
+        "name": "Templates",
+        "type": "String",
+        "required": true,
+        "desc": "<ul style='list-style:none'><li>default: 思维导图</li><li>structure: 组织结构图</li><li>filetree: 目录组织图</li><li>right: 逻辑结构图</li><li>fish-bone: 鱼骨头图</li></ul>"
+    }],
+    "properties": [],
+    "methods": []
+}

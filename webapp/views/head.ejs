@@ -1,0 +1,24 @@
+<div class="row head">
+				<header class="navbar-fixed-top">
+					<div class="pull-left label-cnt cant-select">
+						<label class="logo-text"><%= title %></label>
+					</div>
+					<%if(paths && paths.length){%>
+						<ol class="breadcrumb col-lg-9 path">
+							<%for(var i=0; i<paths.length-1; i++) {%>
+								<li><a href="<%=paths[i].location%>"><%=paths[i].name%></a></li>
+							<%}%>
+							<li><span href="<%=paths[i].location%>"><%=paths[paths.length-1].name%></span></li>
+						</ol>
+					<%}%>
+					<div class="col-lg-3">
+						<div class="input-group pull-right" style="margin-top:3px">
+							<input type="text" class="form-control search-input" placeholder="Search...">
+							<span class="input-group-btn">
+        <label class="btn btn-default btn-sm" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+							</label>
+							</span>
+						</div>
+					</div>
+				</header>
+			</div>
